@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message - RevoU International School</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/message-us.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/profile.html">Our Profile</a></li>
+          <li><a href="/achievement.html">Achievement</a></li>
+          <li><a href="#">Message Us</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section id="message-us">
+        <div class="container">
+          <h1 style="margin-bottom: 20px">Message Us</h1>
+          <div class="row row-top">
+            <div class="column">
+              <div class="message-form">
+                <form
+                  id="msg-form"
+                  name="msg-form"
+                  onsubmit="return validateForm()"
+                >
+                  <div class="row">
+                    <div class="column-left">
+                      <label class="label-left" for="nama">Nama</label><br />
+                      <label class="label-left" for="ttl">Tanggal lahir</label
+                      ><br />
+                      <label class="label-left" for="jekel">Jenis kelamin</label
+                      ><br />
+                      <label class="label-left" for="pesan">Pesan</label><br />
+                    </div>
+                    <div class="column-mid">
+                      <b>: </b><br />
+                      <b>: </b><br />
+                      <b>: </b><br />
+                      <b>: </b>
+                    </div>
+                    <div class="column-right">
+                      <input
+                        class="label-nama"
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Nama"
+                        required
+                      /><br />
+                      <input
+                        class="label-rd"
+                        type="date"
+                        id="ttl"
+                        placeholder="dd-mm-yyyy"
+                        name="ttl"
+                        required
+                      /><br />
+                      <input
+                        class="radio-k"
+                        type="radio"
+                        id="pria"
+                        name="jekel"
+                        value="Pria"
+                        required
+                      />
+                      <label for="pria">Pria</label>
+                      <input
+                        class="radio-k"
+                        type="radio"
+                        id="wanita"
+                        name="jekel"
+                        value="Wanita"
+                        required
+                      />
+                      <label for="wanita">Wanita</label><br />
+                      <input
+                        class="label-pesan"
+                        type="text"
+                        id="pesan"
+                        name="pesan"
+                        placeholder="Pesan"
+                        required
+                      /><br />
+                    </div>
+                  </div>
+                  <input
+                    id="submit"
+                    class="btn-submit"
+                    type="submit"
+                    value="Submit"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="column">
+              <div class="show-message">
+                <p>
+                  <b>Current time :</b> <span id="sender-time"></span>
+                  <br />
+                  <br />
+                  <b>Nama :</b> <span id="sender-nama"></span>
+                  <br />
+                  <b>Tanggal Lahir :</b> <span id="sender-ttl"></span>
+                  <br />
+                  <b>Jenis Kelamin :</b> <span id="sender-jekel"></span>
+                  <br />
+                  <b>Pesan :</b> <span id="sender-pesan"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <hr />
+        <p>Created by Muhamad Bagas Widyatama</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

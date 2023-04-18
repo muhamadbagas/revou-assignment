@@ -1,0 +1,77 @@
+section {
+  margin-top: 150px;
+  padding-bottom: 220px;
+}
+
+.show-message {
+  border: 2px;
+  border-style: solid;
+  width: 80%;
+  padding-top: 6vh;
+  padding-left: 2vh;
+  padding-bottom: 10vh;
+}
+
+.column-left {
+  flex: 25%;
+}
+
+.column-mid {
+  flex: 2%;
+  line-height: 160%;
+}
+
+.column-right {
+  flex: 73%;
+}
+
+.label-left {
+  line-height: 160%;
+}
+
+.label-right {
+  border-radius: 5px;
+  margin-bottom: 1vh;
+  width: 60%;
+}
+
+.label-nama {
+  width: 65%;
+  margin-bottom: 1vh;
+  border: 2px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.label-rd {
+  border-radius: 5px;
+  margin-bottom: 1vh;
+  width: 65%;
+}
+
+.label-pesan {
+  width: 65%;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  padding-bottom: 10vh;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.radio-k {
+  display: inline-block;
+}
+
+.btn-submit {
+  margin-top: 2vh;
+  width: 33vw;
+  height: 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    margin-top: 180px;
+    padding-bottom: 180px;
+  }
+}

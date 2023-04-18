@@ -1,0 +1,46 @@
+main {
+  margin-top: 180px;
+}
+
+.splash-text {
+  font-size: 8em;
+}
+
+.center {
+  margin-top: 35%;
+  border: none;
+}
+
+.join-now {
+  font-size: 3em;
+  text-align: center;
+  background-image: url("assets/profile/join-us-today.png");
+}
+
+.switch1 {
+  display: flex;
+}
+
+.switch2 {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .splash-text {
+    margin-top: 50vh;
+    font-size: 3em;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    flex-direction: column;
+  }
+  .switch1 {
+    display: none;
+  }
+  .switch2 {
+    display: contents;
+  }
+}

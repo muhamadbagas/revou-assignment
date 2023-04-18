@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RevoU International School</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="/profile.html">Our Profile</a></li>
+          <li><a href="/achievement.html">Achievement</a></li>
+          <li><a href="/message-us.html">Message Us</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Welcome Text -->
+      <section id="header">
+        <div class="container">
+          <div class="header">
+            <h2>
+              Hi <span id="user-header" style="font-weight: 600">User</span>,
+              Welcome To RevoU International School
+            </h2>
+            <h5>Ini adalah website resmi RevoU International School</h5>
+          </div>
+        </div>
+      </section>
+      <!-- Welcome Text End -->
+
+      <!-- Jumbotron -->
+      <section id="jumbotron">
+        <img class="banner" src="assets/img/banner.jpg" alt="revoU-banner" />
+        <hr />
+      </section>
+      <!-- Jumbotron End -->
+
+      <!-- Facility -->
+      <section id="facility">
+        <div class="container">
+          <h1 style="margin-bottom: 20px">Our Facilitation</h1>
+          <ul class="facility">
+            <div class="facility-block">
+              <img
+                class="facility-img"
+                src="assets/img/lab.jpg"
+                alt="Computer Lab"
+              />
+              <span class="facility-desc" style="margin-top: 20px"
+                >Computer Lab</span
+              >
+            </div>
+            <div class="facility-block">
+              <img
+                class="facility-img"
+                src="assets/img/field.jpg"
+                alt="Sport Room"
+              />
+              <span class="facility-desc" style="margin-top: 20px"
+                >Sport Room</span
+              >
+            </div>
+            <div class="facility-block">
+              <img
+                class="facility-img"
+                src="assets/img/pool.jpg"
+                alt="Swimming Pool"
+              />
+              <span class="facility-desc" style="margin-top: 20px"
+                >Swimming Pool</span
+              >
+            </div>
+          </ul>
+        </div>
+        <hr />
+      </section>
+      <!-- Facility End -->
+
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <h1>About Us</h1>
+          <br />
+          <p class="about-us">
+            Welcome to the RevoU International School! We are a premiere
+            education institution that offers world-class education in the field
+            of Information Technology. Our school is dedicated to
+            <span style="background-color: yellow"
+              ><b>providing students with the skills and knowledge</b></span
+            >
+            they need to excel in the dynamic and rapidly-evolving IT industry.
+          </p>
+        </div>
+        <hr />
+      </section>
+      <!-- About End -->
+
+      <!-- Vision and Mission -->
+      <section id="mission">
+        <div class="container">
+          <h1>Our Vision & Mission</h1>
+          <h2 style="margin-top: 20px"><u>Vision:</u></h2>
+          <p class="mission">
+            Our goal is to be a leading IT community school in Indonesia and
+            providing students to become successful professional developers in
+            the technology industry.
+          </p>
+          <h2><u>Mission:</u></h2>
+          <p class="mission">
+            Our mission is to provide high-quality, accessible, and affordable
+            IT education to learners of all backgrounds and skill levels. We
+            serve our students with the knowledge, skills, and tools they need
+            to succeed in the technology industry.
+          </p>
+        </div>
+        <hr />
+      </section>
+      <!--Vision and Mission End -->
+
+      <!-- Message -->
+      <section id="message-us">
+        <div class="container">
+          <h1 style="margin-bottom: 20px">Message Us</h1>
+          <div class="row row-top">
+            <div class="column">
+              <div class="message-form">
+                <form
+                  id="msg-form"
+                  name="msg-form"
+                  onsubmit="return validateForm()"
+                >
+                  <div class="row">
+                    <div class="column-left">
+                      <label class="label-left" for="nama">Nama</label><br />
+                      <label class="label-left" for="ttl">Tanggal lahir</label
+                      ><br />
+                      <label class="label-left" for="jekel">Jenis kelamin</label
+                      ><br />
+                      <label class="label-left" for="pesan">Pesan</label><br />
+                    </div>
+                    <div class="column-mid">
+                      <b>: </b><br />
+                      <b>: </b><br />
+                      <b>: </b><br />
+                      <b>: </b>
+                    </div>
+                    <div class="column-right">
+                      <input
+                        class="label-nama"
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Nama"
+                        required
+                      /><br />
+                      <input
+                        class="label-rd"
+                        type="date"
+                        id="ttl"
+                        placeholder="dd-mm-yyyy"
+                        name="ttl"
+                        required
+                      /><br />
+                      <input
+                        class="radio-k"
+                        type="radio"
+                        id="pria"
+                        name="jekel"
+                        value="Pria"
+                        required
+                      />
+                      <label for="pria">Pria</label>
+                      <input
+                        class="radio-k"
+                        type="radio"
+                        id="wanita"
+                        name="jekel"
+                        value="Wanita"
+                        required
+                      />
+                      <label for="wanita">Wanita</label><br />
+                      <input
+                        class="label-pesan"
+                        type="text"
+                        id="pesan"
+                        name="pesan"
+                        placeholder="Pesan"
+                        required
+                      /><br />
+                    </div>
+                  </div>
+                  <input
+                    id="submit"
+                    class="btn-submit"
+                    type="submit"
+                    value="Submit"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="column">
+              <div class="show-message">
+                <p>
+                  <b>Current time :</b> <span id="sender-time"></span>
+                  <br />
+                  <br />
+                  <b>Nama :</b> <span id="sender-nama"></span>
+                  <br />
+                  <b>Tanggal Lahir :</b> <span id="sender-ttl"></span>
+                  <br />
+                  <b>Jenis Kelamin :</b> <span id="sender-jekel"></span>
+                  <br />
+                  <b>Pesan :</b> <span id="sender-pesan"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <!-- Message End -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <p>Created by Muhamad Bagas Widyatama</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/user.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
